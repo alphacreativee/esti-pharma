@@ -79,6 +79,10 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+#header {
+  position: relative;
+  z-index: 999;
+}
 #header .header-top {
   display: flex;
   align-items: center;
@@ -353,4 +357,19 @@ body {
   gap: 17px;
   width: max-content;
   height: max-content;
+}
+
+.section-quality {
+  padding: 80px 0 50px;
+}
+.section-quality .quality-image {
+  margin-right: 110px;
+  box-shadow: 0 0 20px 0 rgba(85, 172, 237, 0.2);
+  border-radius: 0 50% 50% 0;
+}
+.section-quality .quality-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center right;
 }

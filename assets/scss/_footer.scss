@@ -66,6 +66,9 @@
     }
   }
   &-contact {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    gap: 0 32px;
     .contact-item {
       display: flex;
       align-items: center;

@@ -415,6 +415,11 @@ body {
 .footer-address .address-content span:first-child {
   font-weight: 400;
 }
+.footer-contact {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  gap: 0 32px;
+}
 .footer-contact .contact-item {
   display: flex;
   align-items: center;

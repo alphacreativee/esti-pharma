@@ -1,0 +1,38 @@
+.footer {
+  &-top {
+    padding: 32px 168px 48px;
+    display: grid;
+    grid-template-columns: 220px auto;
+    gap: 56px;
+  }
+  &-title {
+    font-size: 18px;
+    line-height: 1;
+    font-weight: bold;
+    color: var(--color-primary);
+    margin-bottom: 4px;
+  }
+  &-desc {
+    font-size: 12px;
+    color: var(--color-black);
+    font-weight: 400;
+    margin-bottom: 12px;
+  }
+  &-read-more {
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--color-black);
+  }
+  &-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+  }
+  &-item-sub {
+    font-size: 14px;
+    color: var(--color-primary);
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+}

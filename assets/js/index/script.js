@@ -10,8 +10,35 @@ gsap.ticker.add((time) => {
 
 gsap.ticker.lagSmoothing(0);
 // end lenis
+
+function banner() {
+  if ($(".hero-sec").length < 1) return;
+
+  var swiperBanner = new Swiper(".swiper-banner", {
+    loop: true,
+    speed: 1000,
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true
+    },
+    autoplay: {
+      delay: 8000,
+      disableOnInteraction: false
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    grabCursor: true,
+    keyboard: {
+      enabled: true
+    }
+  });
+}
+
 const init = () => {
   gsap.registerPlugin(ScrollTrigger);
+  banner();
 };
 preloadImages("img").then(() => {
   // Once images are preloaded, remove the 'loading' indicator/class from the body

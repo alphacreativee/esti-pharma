@@ -1,0 +1,54 @@
+.hero-sec {
+  margin-top: 27px;
+
+  &__container {
+    width: calc(100% - 220px);
+    border-radius: 20px;
+    margin: 0 auto;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+
+    .swiper-banner {
+      width: 100%;
+      height: 100%;
+      .swiper-slide {
+        overflow: hidden;
+      }
+      .slide-banner {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      background-color: #55aced;
+
+      &.swiper-pagination-bullet-active {
+        background-color: #0a71b9;
+      }
+    }
+
+    .swiper-pagination {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 23px;
+      z-index: 2;
+      gap: 17px;
+      width: max-content;
+      height: max-content;
+    }
+  }
+}

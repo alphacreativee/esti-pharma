@@ -5,6 +5,16 @@
     grid-template-columns: 220px auto;
     gap: 56px;
   }
+  &-bottom {
+    padding: 18px 168px;
+    border-top: 1px solid var(--color-primary);
+    .footer-all-rights {
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--color-black);
+      position: relative;
+    }
+  }
   &-title {
     font-size: 18px;
     line-height: 1;
@@ -69,6 +79,7 @@
     display: grid;
     grid-template-columns: max-content max-content;
     gap: 0 32px;
+    margin-bottom: 12px;
     .contact-item {
       display: flex;
       align-items: center;
